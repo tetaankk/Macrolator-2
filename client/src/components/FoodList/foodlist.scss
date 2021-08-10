@@ -1,0 +1,75 @@
+.foodList {
+    font-weight: 200;
+    color:#242731;
+
+    .foodListHeader{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        h3{
+            font-size: 20px;
+            margin-right: 20px;
+            word-wrap: none;
+        }
+
+
+    }
+
+    .table {
+        font-size: 12px;
+        font-weight: 300;
+        width: 100%;
+        text-align: left;
+        border: 1px solid gray;
+
+        thead {
+                tr {
+                    margin-left: 5px;
+                    margin-right: 5px;
+
+                    td{
+                        //text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                }
+        }
+    }
+    form{
+        display: inline-block;
+        text-align: left;
+
+        .datepicker{
+            width: fit-content;
+        }
+
+        input {
+            background-color: whitesmoke;
+            border: 2px solid #ffafa2;
+            color:#242731;
+            padding: 2px 5px;
+            border-radius: 10px;
+            font-family: inherit;
+    
+            &:focus{
+                outline: none;
+            }
+        }
+    
+        button {
+            background-color: transparent;
+            border: 2px solid #ffafa2;
+            color: black;
+            padding: 2px;
+            border-radius: 10px;
+            margin-left: 8px;
+            font-family: inherit;
+            font-weight: 600;
+            cursor: pointer;
+    
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}

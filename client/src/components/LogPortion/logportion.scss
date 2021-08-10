@@ -1,0 +1,96 @@
+.logPortionView {
+    display: flex;
+    width: 960px;
+    height: 500px;
+    color: white;
+
+    .leftContainer {
+        border: 2px solid #415963;
+        border-radius: 10px;
+        margin-right: 5px;
+        padding: 5px;
+        flex: 1;
+        overflow: auto;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 2px;
+        
+        .searchResults {
+            .searchResultsItem{
+                &:hover {
+                    color: red;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .rightContainer {
+        border: 2px solid #415963;
+        border-radius: 10px;
+        padding: 5px;
+        flex: 1;
+        margin-right: 5px;
+
+        .productInfo {
+            margin-left: 10px;
+
+            .productInfoTable {
+                font-size: 15px;
+                text-align: left;
+
+                caption {
+                    text-align: left;
+                    font-size: 15px;
+                }
+
+                td {
+                    text-align: right;
+                }
+            }
+
+            h2 {
+                font-size: 20px;
+            }     
+        }
+    }
+
+    form{
+        display: inline-block;
+        text-align: left;
+
+        .datepicker{
+            width: fit-content;
+        }
+
+        input {
+            background-color: whitesmoke;
+            border: 2px solid #ffafa2;
+            color:#242731;
+            padding: 2px 5px;
+            border-radius: 10px;
+            font-family: inherit;
+    
+            &:focus{
+                outline: none;
+            }
+        }
+    
+        button {
+            background-color: transparent;
+            border: 2px solid #ffafa2;
+            color: black;
+            padding: 2px;
+            border-radius: 10px;
+            margin-left: 8px;
+            font-family: inherit;
+            font-weight: 600;
+            cursor: pointer;
+    
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}

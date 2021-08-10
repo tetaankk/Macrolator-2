@@ -1,0 +1,43 @@
+.topBar {
+    //position: sticky;
+    top: 0;
+    width: 960px;
+    height: 15vh;
+    font-size: calc(12px + 0.6vh);
+
+    ul{
+        .navbar-item {
+            display: inline;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 20px;
+    
+            .nav-link {
+                list-style-type: none;
+                text-decoration: none;
+                color: whitesmoke;
+                font-weight: 600;
+                display: inline-block;
+                transition: all 0.15s ease;
+    
+                &:hover {
+                    transition: all 0.15s ease;
+                    text-decoration: underline;
+                    transform:translate(1px,-1px);
+                    color: white;
+                }
+            }
+    
+            .navbar-header{
+                display: inline-block;
+                font-size: 1.3em;
+            }
+    
+            .nav-link-small {
+                font-size: 0.7em;
+                //margin-left: 40px;
+            }
+        }
+    }
+                
+}
